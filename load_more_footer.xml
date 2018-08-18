@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_more_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_3">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_slate_gray"
+        android:visibility="visible" />
+    <ProgressBar
+        android:id="@+id/load_more_progressBar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/costum_progress_bar"
+        android:padding="3dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
+
+//costum progress bar
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360">
+
+    <shape
+        android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:thicknessRatio="8"
+        android:useLevel="false">
+        <gradient
+            android:centerColor="@color/headerColor"
+            android:centerY="0.50"
+            android:endColor="@color/dark_slate_gray"
+            android:startColor="@color/gray_2"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+
+</rotate>
