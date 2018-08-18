@@ -1,3 +1,5 @@
+
+//after you load your data call onLoadMoreComplete
 public class LoadMoreListView extends ListView implements AbsListView.OnScrollListener {
 
     private static final String TAG = "LoadMoreListView";
